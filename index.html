@@ -26,16 +26,43 @@
         <form class="form is-invisible">
           <label class="form-input-label" for="linkname">Name of the link</label>
           <input class="form-input" type="text" id="linkname" />
-
         </form>
       </header>
+
+      <div class="modal">
+        <header class=".modal-content">
+          <figure>
+            <img src="assets/img/popup.png" alt="image popup">
+            <figcaption>Robert Biro</figcaption>
+          </figure>
+        </header>
+
+        <div class="modal-content">
+          <h1 class="about-me-title">About Me</h1>
+          <p class="about-me-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <ol class="news">
+            <li class="news-item">
+              <a class="news-link" href="#">Frontend Design</a>
+            </li>
+            <li>
+              <a class="news-link" href="#">Javascript modules</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+      
+      <div class="modal-overlay"></div>
+
       <ol class="news">
         <li class="news-item">
           <a class="news-link" href="#">Frontend Design</a>
           <ul class="news-meta">
             <li class="news-meta-item">
               <em>Posted by:</em>
-              <a href="#">Robert</a>
+              <a class="js-news-poster" href="#">Robert</a>
             </li>
             <li class="news-meta-item">
               <a href="#">2 comments</a>
@@ -50,7 +77,7 @@
           <ul class="news-meta">
             <li class="news-meta-item">
               <em>Posted by:</em>
-              <a href="#">Gigi</a>
+              <a class="js-news-poster" href="#">Gigi</a>
             </li>
             <li class="news-meta-item">
               <a href="#">5 comments</a>
@@ -65,7 +92,7 @@
           <ul class="news-meta">
             <li class="news-meta-item">
               <em>Posted by:</em>
-              <a href="#">Norbert</a>
+              <a class="js-news-poster" href="#">Norbert</a>
             </li>
             <li class="news-meta-item">
               <a href="#">0 comment</a>
@@ -80,7 +107,7 @@
           <ul class="news-meta">
             <li class="news-meta-item">
               <em>Posted by:</em>
-              <a href="#">Josiane</a>
+              <a class="js-news-poster" href="#">Josiane</a>
             </li>
             <li class="news-meta-item">
               <a href="#">1 comment</a>
@@ -95,7 +122,7 @@
           <ul class="news-meta">
             <li class="news-meta-item">
               <em>Posted by:</em>
-              <a href="#">Billy</a>
+              <a class="js-news-poster" href="#">Billy</a>
             </li>
             <li class="news-meta-item">
               <a href="#">3 comments</a>
