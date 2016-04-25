@@ -1,83 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>DevTips Starter Kit</title>
+  <title>Front-End News</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/main2.css" />
 </head>
+
 <body>
+  <!--header+main>(h1+(p>a)+(ol>(li>a+(p>(a+a+a)))*10))-->
+  <header class="header">
+    <div class="container">
+      <p class="logo">Front-End News</p>
+    </div>
+  </header>
+  <main class="content">
+    <div class="container">
+      <header class="subheader">
+        <h1>Latest News</h1>
+        <p>The latest links in the front-end community.<a class="js-add-link" href="#">Add a link Now!</a></p>
+        <form class="form is-invisible">
+          <label class="form-input-label" for="linkname">Name of the link</label>
+          <input class="form-input" type="text" id="linkname" />
 
-<div class="page-home">
+        </form>
+      </header>
+      <ol class="news">
+        <li class="news-item">
+          <a class="news-link" href="#">Frontend Design</a>
+          <ul class="news-meta">
+            <li class="news-meta-item">
+              <em>Posted by:</em>
+              <a href="#">Robert</a>
+            </li>
+            <li class="news-meta-item">
+              <a href="#">2 comments</a>
+            </li>
+            <li class="news-meta-item js-like">
+              <a href="#"> Liked!</a>
+            </li>
+          </ul>
+        </li>
+        <li class="news-item">
+          <a class="news-link" href="#">Frontend Design 2</a>
+          <ul class="news-meta">
+            <li class="news-meta-item">
+              <em>Posted by:</em>
+              <a href="#">Gigi</a>
+            </li>
+            <li class="news-meta-item">
+              <a href="#">5 comments</a>
+            </li>
+            <li class="news-meta-item js-like">
+              <a href="#">Like this story!</a>
+            </li>
+          </ul>
+        </li>
+        <li class="news-item">
+          <a class="news-link" href="#">Frontend Design 3</a>
+          <ul class="news-meta">
+            <li class="news-meta-item">
+              <em>Posted by:</em>
+              <a href="#">Norbert</a>
+            </li>
+            <li class="news-meta-item">
+              <a href="#">0 comment</a>
+            </li>
+            <li class="news-meta-item js-like">
+              <a href="#">Liked!</a>
+            </li>
+          </ul>
+        </li>
+        <li class="news-item">
+          <a class="news-link" href="#">Frontend Design 4</a>
+          <ul class="news-meta">
+            <li class="news-meta-item">
+              <em>Posted by:</em>
+              <a href="#">Josiane</a>
+            </li>
+            <li class="news-meta-item">
+              <a href="#">1 comment</a>
+            </li>
+            <li class="news-meta-item js-like">
+              <a href="#">Like this story!</a>
+            </li>
+          </ul>
+        </li>
+        <li class="news-item">
+          <a class="news-link" href="#">Frontend Design 5</a>
+          <ul class="news-meta">
+            <li class="news-meta-item">
+              <em>Posted by:</em>
+              <a href="#">Billy</a>
+            </li>
+            <li class="news-meta-item">
+              <a href="#">3 comments</a>
+            </li>
+            <li class="news-meta-item js-like">
+              <a href="#">Like this story!</a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </main>
 
-  <section>
-    <h1 class="page-title">DevTips<br>Starter Kit</h1>
-    <p>Ground zero for your next project.</p>
-
-    <a href="https://github.com/DevTips/DevTips-Starter-Kit/archive/master.zip" class="button button-download">Download Now</a>
-
-    <a class="fork-tag" href="https://github.com/DevTips/DevTips-Starter-Kit">Fork Me on GitHub</a>
-
-  </section>
-
-  <section>
-
-    <article>
-      <h4>Watch the Video</h4>
-      <div class="flex-video-wrap">
-        <div class="flex-video">
-          <iframe src="https://www.youtube.com/embed/F3u7whqIxrc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </article>
-
-    <article>
-      <p>Brought to you by</p>
-      <div class="name-lockup">
-        <img class="avatar" src="https://yt3.ggpht.com/-47U43a3eNW0/AAAAAAAAAAI/AAAAAAAAAAA/fWgb7mKcn6k/s176-c-k-no/photo.jpg">
-        <div class="name">
-          <strong>Travis Neilson</strong>
-          <br>
-          <a href="https://twitter.com/DevTipsShow">@DevTipsShow</a>
-        </div>
-      </div>
-  </article>
-
-  </section>
-
-  <pre>
-    DevTips-Starter-Kit
-    | -- assets/
-    |   | -- css/
-    |   |   | -- 1-tools/
-    |   |   |   | -- bourbon/
-    |   |   |   | -- fonts.sass
-    |   |   |   | -- normalize.sass
-    |   |   |   | -- vars.sass
-    |   |   | -- 2-basics/
-    |   |   |   | -- body-elements.sass
-    |   |   |   | -- links.sass
-    |   |   |   | -- selection-colors.sass
-    |   |   |   | -- typography.sass
-    |   |   | -- 3-modules/
-    |   |   |   | -- example-module.sass
-    |   |   |   | -- example-module.sass
-    |   |   | -- 4-pages/
-    |   |   |   | -- example-page.sass
-    |   |   | -- main.sass
-    |   | -- js/
-    |   |   | -- jquery.js
-    |   |   | -- functions.js
-    |   | -- img/
-    | -- favicon.ico
-    | -- readme.md
-    | -- index.html
-  </pre>
-
-</div>
-
-<script src="assets/js/jquery-2.1.4.min.js"></script>
-<script src="assets/js/functions.js" type="text/javascript"></script>
+  <script src="assets/js/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/functions.js"></script>
 </body>
+
 </html>

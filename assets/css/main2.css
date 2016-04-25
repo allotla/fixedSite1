@@ -1,0 +1,125 @@
+/*******************************
+ * Base
+ *******************************/
+body {
+  margin: 0;
+  font-family: Lato, sans-serif;
+}
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+}
+a, a:focus {
+  color: #F55E81;
+  transition: color linear 0.2s;
+}
+a:hover, a:active {
+  color: #212121;
+}
+
+
+/*******************************
+ * Header
+ *******************************/
+.header {
+  background-color: #2854B9;
+  color: white;
+  padding: 1em 0;
+}
+.logo {
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+
+/*******************************
+ * Content
+ *******************************/
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content {
+  /*margin: 1em;*/
+  /*width: 600px;*/
+  background-color: white;
+  padding: 10px 100px;
+  /*margin: 0 auto;*/
+}
+.subheader > h1 {
+  font-size: 2em; 
+}
+
+.news-item>a {
+  color: #2854B9;
+} 
+
+.news-item {
+  margin-top: 1em;
+}
+.news-item:not(:last-child) {
+  border-bottom: #ddd 2px solid;
+}
+.news-link {
+  font-size: 1.5em;
+} 
+/*.news-item>p {
+  margin-bottom: 0.5em;
+}*/
+.news-meta-item {
+  display: inline;
+}
+
+.news-meta-item:not(:last-child) {
+  margin-right: 1em;
+}
+
+/*******************************
+ * Animation
+ *******************************/
+@keyframes myAnimation {
+  from, 50%, to {
+    opacity: 0;
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+}
+
+.is-liked {
+  animation: myAnimation 2s;
+}
+
+/*******************************
+ * Form
+ *******************************/
+.form {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}
+
+/* on ne peut pas faire display:none puis display:block pour des raisons d'animation */
+.is-visible {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  transition: opacity 1s ease-in-out, visibility 1s, ease-in-out;
+}
+
+.form-input-label {
+  font-weight: bold;
+  display: block;
+}
+.form-input {
+  width: 100%;
+  border-top-style: outset;
+  border-left-style: outset;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 10px;
+  box-sizing: border-box;
+}
